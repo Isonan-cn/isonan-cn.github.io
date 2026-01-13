@@ -24,6 +24,7 @@ const browserPref = window.matchMedia('(prefers-color-scheme: dark)').matches ? 
 
 // Set the theme on page load or when explicitly called
 let setTheme = (theme) => {
+  theme="light";
   const use_theme =
     theme ||
     localStorage.getItem("theme") ||
