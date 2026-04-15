@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a fourth-year undergraduate student at Yao Class, Tsinghua University. I have broad interests in theoretical computer science. Recently, I am especially interested in designing space- and time-efficient data structures. 
+I am a fourth-year undergraduate student at Yao Class, Tsinghua University. I have broad interests in theoretical computer science, particularly in data structures and approximation algorithms.
 
 During the spring of 2025, I had a great time visiting [William Kuszmaul](https://sites.google.com/site/williamkuszmaul) at CMU.
 
