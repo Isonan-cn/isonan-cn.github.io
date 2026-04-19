@@ -237,7 +237,7 @@ permalink: /:categories/:title/
 timezone: Etc/UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
-# Plugins (sitemap.xml / feed.xml / robots.txt are plain static files in the repo root — not Jekyll pages)
+# Plugins (robots.txt + sitemap.txt are plain static files in the repo root — not Jekyll pages)
 plugins:
   - jekyll-redirect-from
   - jemoji
