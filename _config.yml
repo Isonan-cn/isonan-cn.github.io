@@ -160,6 +160,9 @@ include:
   - .htaccess
   - _pages
   - files
+  - sitemap.xml
+  - robots.txt
+  - feed.xml
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"

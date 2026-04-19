@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Yang Hu</title>
+  <link href="https://isonan-cn.github.io/" rel="alternate" type="text/html"/>
+  <link href="https://isonan-cn.github.io/feed.xml" rel="self" type="application/atom+xml"/>
+  <updated>2026-04-18T00:00:00Z</updated>
+  <id>https://isonan-cn.github.io/</id>
+</feed>
