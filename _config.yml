@@ -13,8 +13,7 @@ title                    : "Yang Hu"
 title_separator          : "-"
 name                     : &name "Yang Hu"
 description              : &description "Yang Hu's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://isonan-cn.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
-                                                           # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+url                      : "https://isonan-cn.github.io" # must be quoted (YAML + https://)
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "isonan-cn/isonan-cn.github.io"
 
@@ -238,17 +237,13 @@ permalink: /:categories/:title/
 timezone: Etc/UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
-# Plugins
+# Plugins (sitemap.xml / feed.xml are static Liquid pages in the repo root — jekyll-sitemap & jekyll-feed were returning 500 on GitHub Pages)
 plugins:
-  - jekyll-feed
-  - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
 
 # Mimic GitHub Pages with --safe
 whitelist:
-  - jekyll-feed
-  - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
 

@@ -1,0 +1,26 @@
+---
+layout: null
+permalink: /sitemap.xml
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% assign base = site.url | append: site.baseurl %}
+{% for p in site.pages %}
+  {% if p.url and p.sitemap != false %}
+  <url>
+    <loc>{{ base }}{{ p.url | replace: 'index.html', '' }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
+  {% endif %}
+{% endfor %}
+{% for f in site.static_files %}
+  {% assign ext = f.path | split: '.' | last | downcase %}
+  {% if ext == 'pdf' %}
+  <url>
+    <loc>{{ base }}/{{ f.path }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
+  {% endif %}
+{% endfor %}
+</urlset>
