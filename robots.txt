@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://isonan-cn.github.io/sitemap.xml
-Sitemap: https://isonan-cn.github.io/sitemap.txt
+Sitemap: https://isonan-cn.github.io/files/sitemap.xml
+Sitemap: https://isonan-cn.github.io/files/sitemap.txt
