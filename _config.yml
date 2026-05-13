@@ -25,11 +25,11 @@ author:
   avatar           : "yang.jpg"
   name             : "Yang Hu"
   pronouns         : # example: "she/her"  
-  bio              : "Undergraduate"
-  location         : "Beijing, China"
-  employer         : "IIIS, Tsinghua University"
+  bio              : "Undergraduate, Tsinghua University"
+  location         : # "Beijing, China"
+  employer         : # "IIIS, Tsinghua University"
   uri              : # URL
-  email            : "y-hu22@mails.tsinghua.edu.cn"
+  email            : "yanghu2004@outlook.com"
 
   # Academic websites
   academia         : # URL
