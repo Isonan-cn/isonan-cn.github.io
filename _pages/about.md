@@ -1,6 +1,5 @@
 ---
 permalink: /
-title: "About Me"
 seo_title: "Yang Hu's Personal Website"
 author_profile: true
 redirect_from: 
