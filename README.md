@@ -1,5 +1,12 @@
-# Personal site
+# Yang Hu's academic homepage
 
-Static site for [Yang Hu](https://isonan-cn.github.io/), built with Jekyll and GitHub Pages.
+Static academic website for [Yang Hu](https://isonan-cn.github.io/), built with [Astro Academia](https://github.com/maiobarbero/astro_academia) and deployed on GitHub Pages.
 
-Content: home page (`_pages/about.md`) and CV (`files/resume.pdf`).
+## Local development
+
+```sh
+npm install
+npm run dev
+```
+
+Run `npm run build` to create the production site in `dist/`. Pushing to `master` deploys it to GitHub Pages.

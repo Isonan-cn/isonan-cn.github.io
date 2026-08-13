@@ -1,0 +1,36 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import { publications } from '@/data/cv'
+import { highlightAuthor } from '@/lib/utils'
+---
+
+<Layout title='Publications | Yang Hu' description="Yang Hu's publications in theoretical computer science.">
+	<div class='max-w-none'>
+		<h1 class='text-3xl font-bold mb-3'>Publications</h1>
+		<p class='text-base-content/70 mb-8'>Authors are listed in alphabetical order.</p>
+		<div class='space-y-6'>
+			{
+				publications.map((paper) => (
+					<article class='card bg-base-200'>
+						<div class='card-body'>
+							<h2 class='card-title text-xl'>
+								{paper.link ? (
+									<a href={paper.link} target='_blank' rel='noreferrer' class='hover:text-secondary transition-colors'>
+										{paper.title}
+									</a>
+								) : paper.title}
+							</h2>
+							<p class='text-sm leading-relaxed' set:html={highlightAuthor(paper.authors)} />
+							<p class='text-sm text-base-content/70'>{paper.journal} · {paper.time}</p>
+							{paper.link && (
+								<div class='card-actions justify-end mt-2'>
+									<a href={paper.link} target='_blank' rel='noreferrer' class='btn btn-sm btn-secondary text-secondary-content'>Read paper</a>
+								</div>
+							)}
+						</div>
+					</article>
+				))
+			}
+		</div>
+	</div>
+</Layout>

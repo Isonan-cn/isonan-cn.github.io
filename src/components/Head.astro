@@ -1,0 +1,56 @@
+---
+import { template } from '@/settings'
+
+interface Props {
+	title: string
+	description: string
+	image: string
+}
+
+const { title, description, image } = Astro.props
+const canonicalURL = new URL(Astro.url.pathname, Astro.site)
+---
+
+<meta charset='utf-8' />
+<meta name='viewport' content='width=device-width,initial-scale=1' />
+<link rel='icon' type='image/svg+xml' href={`${template.base}/images/favicon.svg`} />
+<meta name='generator' content={Astro.generator} />
+<link rel='sitemap' href={`${template.base}/sitemap-index.xml`} />
+<link rel='canonical' href={canonicalURL} />
+
+<title>{title}</title>
+<meta name='title' content={title} />
+<meta name='description' content={description} />
+<meta name='author' content='Yang Hu' />
+
+<meta property='og:type' content='website' />
+<meta property='og:url' content={Astro.url} />
+<meta property='og:title' content={title} />
+<meta property='og:description' content={description} />
+<meta property='og:image' content={new URL(image, Astro.url)} />
+<meta property='twitter:card' content='summary_large_image' />
+<meta property='twitter:url' content={Astro.url} />
+<meta property='twitter:title' content={title} />
+<meta property='twitter:description' content={description} />
+<meta property='twitter:image' content={new URL(image, Astro.url)} />
+
+<script async src='https://www.googletagmanager.com/gtag/js?id=G-PRHJLBTFM8'></script>
+<script is:inline>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-PRHJLBTFM8');
+</script>
+
+<script is:inline>
+	const getStoredTheme = () => localStorage.getItem('theme') || 'light';
+	document.documentElement.setAttribute('data-theme', getStoredTheme());
+	document.addEventListener('astro:after-swap', () => {
+		document.documentElement.setAttribute('data-theme', getStoredTheme());
+	});
+</script>
+<script>
+	import { themeChange } from 'theme-change'
+	themeChange()
+	document.addEventListener('astro:after-swap', () => themeChange(false))
+</script>
