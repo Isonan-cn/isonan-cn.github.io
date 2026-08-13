@@ -3,7 +3,7 @@ export const profile = {
 	title: 'B.Eng. in Computer Science',
 	institute: 'Tsinghua University',
 	author_name: 'Yang Hu',
-	bio: "I received my B.Eng. in Computer Science from Yao Class at Tsinghua University's Institute for Interdisciplinary Information Sciences. I have broad interests in theoretical computer science, particularly in data structures and approximation algorithms.",
+	bio: "I received my B.Eng. in Computer Science from Yao Class at Tsinghua University. I have broad interests in theoretical computer science, particularly in data structures and approximation algorithms.",
 }
 
 // Set a value to an empty string to hide that icon.
