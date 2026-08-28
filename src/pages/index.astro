@@ -19,9 +19,6 @@ const { fullName, title, institute, bio } = profile
 	</section>
 
 	<section class='py-12'>
-		<ArticleList listTitle='Recent Publications' listItems={publications.slice(0, 6)} />
-		<div class='mt-8'>
-			<a class='btn btn-secondary text-secondary-content' href='/papers'>View all publications</a>
-		</div>
+		<ArticleList listTitle='Publications' listItems={publications} />
 	</section>
 </Layout>

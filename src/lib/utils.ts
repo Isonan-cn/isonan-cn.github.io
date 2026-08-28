@@ -8,3 +8,8 @@ export function highlightAuthor(authors: string): string{
 	return authors
 }
 
+export function formatPublicationVenue(journal: string, time: string): string {
+	// Preprints intentionally omit the year; dated venue labels retain it.
+	return journal === 'Preprint' ? journal : `${journal} ${time}`
+}
+

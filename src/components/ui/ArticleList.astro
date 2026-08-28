@@ -1,5 +1,5 @@
 ---
-import { highlightAuthor } from '@/lib/utils'
+import { formatPublicationVenue, highlightAuthor } from '@/lib/utils'
 
 interface Props {
 	listTitle: string
@@ -15,21 +15,26 @@ interface Props {
 const { listTitle, listItems } = Astro.props
 ---
 
-<h2 class='text-3xl font-bold mb-8'>{listTitle}</h2>
-<div class='space-y-6'>
+<h2 class='text-3xl font-bold mb-2'>{listTitle}</h2>
+<p class='text-sm text-base-content/70 mb-8'>In theoretical computer science, authors are typically listed alphabetically.</p>
+<ul class='ml-5 list-disc divide-y divide-base-300'>
 	{
 		listItems.map((item) => (
-			<article class='p-6 rounded-lg text-base-content bg-base-200'>
-				<h3 class='text-xl font-semibold mb-2'>
-					{item.link ? (
-						<a class='hover:text-secondary transition-colors' href={item.link} target='_blank' rel='noreferrer'>
-							{item.title}
-						</a>
-					) : item.title}
-				</h3>
-				<p class='text-sm leading-relaxed mb-2' set:html={highlightAuthor(item.authors)} />
-				<p class='text-sm text-base-content/70'>{item.journal} · {item.time}</p>
-			</article>
+			<li class='py-5 first:pt-0 pl-1 marker:text-base-content/60'>
+				<article>
+					<h3 class='font-bold leading-snug'>{item.title}</h3>
+					<p class='mt-1 text-sm leading-relaxed' set:html={highlightAuthor(item.authors)} />
+					<p class='mt-1 text-sm'>
+						<span class='font-bold'>{formatPublicationVenue(item.journal, item.time)}</span>
+						{item.link && (
+							<>
+								<span class='mx-1.5 text-base-content/50'>|</span>
+								<a class='link link-secondary' href={item.link} target='_blank' rel='noreferrer'>paper</a>
+							</>
+						)}
+					</p>
+				</article>
+			</li>
 		))
 	}
-</div>
+</ul>

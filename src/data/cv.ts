@@ -6,10 +6,18 @@ export const skills: Skill[] = []
 
 export const publications: Publication[] = [
 	{
+		title: 'Optimal Time-Space Tradeoff for Dynamic Difference-Encoded Dictionaries',
+		authors: 'Guy E. Blelloch, Yang Hu, William Kuszmaul, Jingxun Liang, Renfei Zhou',
+		journal: 'Preprint',
+		time: '2026',
+		link: 'https://arxiv.org/abs/2608.06077',
+	},
+	{
 		title: 'Dynamic Entropy-Encoded Arrays in O(1) Time with Nearly Optimal Space',
 		authors: 'Guy E. Blelloch, Yang Hu, William Kuszmaul, Tianxiao Li, Renfei Zhou',
 		journal: 'FOCS',
 		time: '2026',
+		link: 'https://arxiv.org/abs/2608.06066',
 	},
 	{
 		title: 'k-Clustering via Iterative Randomized Rounding',

@@ -1,14 +1,14 @@
 export const profile = {
 	fullName: 'Yang Hu',
-	title: 'B.Eng. in Computer Science',
-	institute: 'Tsinghua University',
+	title: 'PhD student',
+	institute: 'Carnegie Mellon University',
 	author_name: 'Yang Hu',
-	bio: "I received my B.Eng. in Computer Science from Yao Class at Tsinghua University. I have broad interests in theoretical computer science, particularly in data structures and approximation algorithms.",
+	bio: "I am a first-year PhD student at Carnegie Mellon University, where I am fortunate to be co-advised by William Kuszmaul and Elaine Shi. Previously, I received my B.Eng. from Yao Class at Tsinghua University. I have broad interests in theoretical computer science, particularly in designing time- and space-efficient data structures.",
 }
 
 // Set a value to an empty string to hide that icon.
 export const social = {
-	email: 'y-hu22@mails.tsinghua.edu.cn',
+	email: 'yanghu2@andrew.cmu.edu',
 	linkedin: '',
 	x: '',
 	bluesky: '',
