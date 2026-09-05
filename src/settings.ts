@@ -30,7 +30,7 @@ export const template = {
 }
 
 export const seo = {
-	default_title: 'Yang Hu',
+	default_title: 'Yang Hu, Theoretical Computer Science',
 	default_description: "Yang Hu's academic homepage and publications in theoretical computer science.",
 	default_image: '/images/yang.jpg',
 }
