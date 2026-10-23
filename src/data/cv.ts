@@ -6,10 +6,25 @@ export const skills: Skill[] = []
 
 export const publications: Publication[] = [
 	{
-		title: 'Optimal Time-Space Tradeoff for Dynamic Difference-Encoded Dictionaries',
-		authors: 'Guy E. Blelloch, Yang Hu, William Kuszmaul, Jingxun Liang, Renfei Zhou',
+		title: 'Iterative Randomized Rounding for Better-Than-2 k-Median Approximation',
+		authors:
+			'Jarosław Byrka, Yuhao Guo, Yang Hu, Shi Li, Yongho Shin, Phanu Vajanopath, Chengzhang Wan, Zaixuan Wang',
 		journal: 'Preprint',
 		time: '2026',
+		link: 'https://arxiv.org/abs/2610.31229',
+	},
+	{
+		title: 'Quadratic Probing Insertions Are ε^{-(1+o(1))} Time',
+		authors: 'Yang Hu, William Kuszmaul, Jingxun Liang, Stefan Walzer, Huacheng Yu, Renfei Zhou',
+		journal: 'Preprint',
+		time: '2026',
+		link: 'https://arxiv.org/abs/2608.28512',
+	},
+	{
+		title: 'Optimal Time-Space Tradeoff for Dynamic Difference-Encoded Dictionaries',
+		authors: 'Guy E. Blelloch, Yang Hu, William Kuszmaul, Jingxun Liang, Renfei Zhou',
+		journal: 'SODA',
+		time: '2027',
 		link: 'https://arxiv.org/abs/2608.06077',
 	},
 	{
