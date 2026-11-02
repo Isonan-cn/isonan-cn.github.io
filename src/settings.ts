@@ -3,7 +3,7 @@ export const profile = {
 	title: 'PhD student',
 	institute: 'Carnegie Mellon University',
 	author_name: 'Yang Hu',
-	bio: "I am a first-year PhD student at Carnegie Mellon University, where I am fortunate to be co-advised by William Kuszmaul and Elaine Shi. Previously, I received my B.Eng. from Yao Class at Tsinghua University. I have broad interests in theoretical computer science, particularly in designing time- and space-efficient data structures.",
+	bio: "I am a first-year PhD student at Carnegie Mellon University, where I am fortunate to be co-advised by William Kuszmaul and Elaine Shi (I also publish under Yang S. Hu). Previously, I received my B.Eng. from Yao Class at Tsinghua University. I have broad interests in theoretical computer science, particularly in designing time- and space-efficient data structures.",
 }
 
 // Set a value to an empty string to hide that icon.
